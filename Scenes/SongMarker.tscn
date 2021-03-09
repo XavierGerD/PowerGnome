@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Font/Roboto-Black_80.tres" type="DynamicFont" id=1]
+
+[node name="SongMarker" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 2560.0
+margin_bottom = 300.0
+mouse_filter = 2
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

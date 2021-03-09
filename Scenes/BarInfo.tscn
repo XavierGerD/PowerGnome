@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Font/Roboto-Black_80.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Font/Roboto-Black_60.tres" type="DynamicFont" id=2]
+
+[node name="BarInfoNode" type="Node2D"]
+
+[node name="SectionTitle" type="RichTextLabel" parent="."]
+margin_left = 4.31836
+margin_top = -167.202
+margin_right = 392.318
+margin_bottom = -66.2017
+mouse_filter = 2
+custom_fonts/normal_font = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SectionTempo" type="RichTextLabel" parent="."]
+margin_left = 4.31836
+margin_top = -79.202
+margin_right = 392.318
+margin_bottom = 21.7983
+mouse_filter = 2
+custom_fonts/normal_font = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeSignature" type="RichTextLabel" parent="."]
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 214.0
+margin_bottom = 111.0
+mouse_filter = 2
+custom_fonts/normal_font = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

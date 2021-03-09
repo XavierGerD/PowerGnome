@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Font/Roboto-Black_80.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/ModeToggler.gd" type="Script" id=2]
+
+[node name="ModeToggler" type="Node2D"]
+z_index = 100
+script = ExtResource( 2 )
+
+[node name="SelectEdit" type="Button" parent="."]
+margin_top = 1190.0
+margin_right = 1280.0
+margin_bottom = 1440.0
+custom_fonts/font = ExtResource( 1 )
+text = "EDIT MODE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SelectPlay" type="Button" parent="."]
+margin_left = 1281.38
+margin_top = 1190.0
+margin_right = 2561.38
+margin_bottom = 1440.0
+custom_fonts/font = ExtResource( 1 )
+text = "PLAY MODE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="SelectEdit" to="." method="_on_SelectEdit_pressed"]
+[connection signal="pressed" from="SelectPlay" to="." method="_on_SelectPlay_pressed"]

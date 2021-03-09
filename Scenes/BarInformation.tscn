@@ -1,0 +1,73 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://SectionTheme.tres" type="Theme" id=1]
+[ext_resource path="res://Font/Roboto-Black_80.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scripts/BarInformation.gd" type="Script" id=3]
+
+[node name="BarInformation" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="PopupPanel" type="Popup" parent="."]
+visible = true
+margin_left = 29.0
+margin_top = 539.0
+margin_right = 2519.0
+margin_bottom = 1371.0
+theme = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel"]
+margin_left = -7.56556
+margin_top = 60.4548
+margin_right = 2492.43
+margin_bottom = 901.454
+color = Color( 0.152941, 0.152941, 0.152941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SectionTitle" type="RichTextLabel" parent="PopupPanel"]
+margin_left = -1.97974
+margin_top = 76.8984
+margin_right = 538.02
+margin_bottom = 175.898
+custom_fonts/normal_font = ExtResource( 2 )
+text = "Add marker:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NumberOfBars" type="RichTextLabel" parent="PopupPanel"]
+margin_left = -1.97974
+margin_top = 188.898
+margin_right = 554.02
+margin_bottom = 300.898
+custom_fonts/normal_font = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SectionTitleEdit" type="TextEdit" parent="PopupPanel"]
+margin_left = 542.02
+margin_top = 72.8984
+margin_right = 1210.02
+margin_bottom = 180.898
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton" type="OptionButton" parent="PopupPanel"]
+margin_left = 1705.66
+margin_top = 64.8284
+margin_right = 2423.66
+margin_bottom = 211.828
+text = "Pick Color"
+__meta__ = {
+"_edit_use_anchors_": false
+}
